@@ -1,0 +1,28 @@
+name: lib_storage_auth_token
+description: Auth token module.
+version: 1.0.0
+author: pahlevikun
+publish_to: none
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  foundation_authenticator:
+    path: ../../module_foundation/foundation_authenticator
+  foundation_injector:
+    path: ../../module_foundation/foundation_injector
+  core_storage:
+    path: ../../module_core/core_storage
+  core_manifest:
+    path: ../../module_core/core_manifest
+
+dev_dependencies:
+  build_runner:
+  injectable_generator:
+
+flutter:

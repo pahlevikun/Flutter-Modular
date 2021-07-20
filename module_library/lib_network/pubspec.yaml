@@ -1,0 +1,39 @@
+name: lib_network
+description: Network module.
+version: 1.0.0
+author: pahlevikun
+publish_to: none
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  dio: ^4.0.0
+  retrofit: ^2.0.0
+  json_serializable: ^4.1.3
+  json_annotation:
+  alice: ^0.2.3
+
+  foundation_authenticator:
+    path: ../../module_foundation/foundation_authenticator
+  foundation_injector:
+    path: ../../module_foundation/foundation_injector
+  core_manifest:
+    path: ../../module_core/core_manifest
+  core_utilities:
+    path: ../../module_core/core_utilities
+  lib_event:
+    path: ../lib_event
+  lib_storage_auth_token:
+    path: ../lib_storage_auth_token
+
+dev_dependencies:
+  retrofit_generator:
+  build_runner:
+  injectable_generator:
+
+flutter:

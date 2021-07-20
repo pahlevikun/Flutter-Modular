@@ -1,0 +1,22 @@
+name: core_router_registry
+description: A new Flutter project.
+version: 1.0.0
+author: pahlevikun
+publish_to: none
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  core_launcher:
+    path: ../../module_core/core_launcher
+  product_splash:
+    path: ../../module_product/product_splash
+  product_authentication:
+    path: ../../module_product/product_authentication
+
+flutter:
