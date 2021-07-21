@@ -16,10 +16,10 @@ dependencies:
     path: ../../module_foundation/foundation_authenticator
   foundation_injector:
     path: ../../module_foundation/foundation_injector
-  core_storage:
-    path: ../../module_core/core_storage
-  core_manifest:
-    path: ../../module_core/core_manifest
+  shared_storage:
+    path: ../../module_shared/shared_storage
+  shared_manifest:
+    path: ../../module_shared/shared_manifest
 
 dev_dependencies:
   build_runner:

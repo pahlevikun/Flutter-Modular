@@ -1,0 +1,25 @@
+name: shared_utilities
+description: Utilities module.
+version: 1.0.0
+author: pahlevikun
+publish_to: none
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_manifest:
+    path: ../shared_manifest
+  intl: ^0.17.0
+  rxdart: ^0.27.1
+  google_fonts: ^2.1.0
+  device_info: ^2.0.2
+  package_info: ^2.0.2
+  permission_handler: ^8.1.2
+  connectivity: ^3.0.6
+  fluttertoast: ^8.0.7
+
+flutter:

@@ -127,41 +127,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.1"
-  core_launcher:
-    dependency: "direct main"
-    description:
-      path: "../../module_core/core_launcher"
-      relative: true
-    source: path
-    version: "1.0.0"
-  core_manifest:
-    dependency: "direct main"
-    description:
-      path: "../../module_core/core_manifest"
-      relative: true
-    source: path
-    version: "1.0.0"
-  core_router:
-    dependency: "direct main"
-    description:
-      path: "../../module_core/core_router"
-      relative: true
-    source: path
-    version: "1.0.0"
-  core_router_registry:
-    dependency: transitive
-    description:
-      path: "../../module_core/core_router_registry"
-      relative: true
-    source: path
-    version: "1.0.0"
-  core_utilities:
-    dependency: "direct main"
-    description:
-      path: "../../module_core/core_utilities"
-      relative: true
-    source: path
-    version: "1.0.0"
   crypto:
     dependency: transitive
     description:
@@ -452,6 +417,41 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.27.1"
+  shared_launcher:
+    dependency: "direct main"
+    description:
+      path: "../../module_shared/shared_launcher"
+      relative: true
+    source: path
+    version: "1.0.0"
+  shared_manifest:
+    dependency: "direct main"
+    description:
+      path: "../../module_shared/shared_manifest"
+      relative: true
+    source: path
+    version: "1.0.0"
+  shared_router:
+    dependency: "direct main"
+    description:
+      path: "../../module_shared/shared_router"
+      relative: true
+    source: path
+    version: "1.0.0"
+  shared_router_registry:
+    dependency: transitive
+    description:
+      path: "../../module_shared/shared_router_registry"
+      relative: true
+    source: path
+    version: "1.0.0"
+  shared_utilities:
+    dependency: "direct main"
+    description:
+      path: "../../module_shared/shared_utilities"
+      relative: true
+    source: path
+    version: "1.0.0"
   sky_engine:
     dependency: transitive
     description: flutter

@@ -176,20 +176,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.1"
-  core_manifest:
-    dependency: transitive
-    description:
-      path: "../../module_core/core_manifest"
-      relative: true
-    source: path
-    version: "1.0.0"
-  core_utilities:
-    dependency: "direct main"
-    description:
-      path: "../../module_core/core_utilities"
-      relative: true
-    source: path
-    version: "1.0.0"
   crypto:
     dependency: transitive
     description:
@@ -522,6 +508,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.27.1"
+  shared_manifest:
+    dependency: transitive
+    description:
+      path: "../../module_shared/shared_manifest"
+      relative: true
+    source: path
+    version: "1.0.0"
+  shared_utilities:
+    dependency: "direct main"
+    description:
+      path: "../../module_shared/shared_utilities"
+      relative: true
+    source: path
+    version: "1.0.0"
   shelf:
     dependency: transitive
     description:

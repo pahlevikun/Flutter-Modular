@@ -1,4 +1,4 @@
-import 'package:core_storage/core_storage.dart';
+import 'package:shared_storage/shared_storage.dart';
 import 'package:foundation_injector/foundation_injector.dart';
 import 'package:lib_storage_auth_token/lib_authentication_token.dart';
 

@@ -1,10 +1,10 @@
 library mobile_app;
 
 import 'package:alice/alice.dart';
-import 'package:core_manifest/manifest.dart';
-import 'package:core_router/core_router.dart';
-import 'package:core_router_registry/core_router_registry.dart';
-import 'package:core_utilities/utilities.dart';
+import 'package:shared_manifest/manifest.dart';
+import 'package:shared_router/shared_router.dart';
+import 'package:shared_router_registry/shared_router_registry.dart';
+import 'package:shared_utilities/utilities.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:foundation_injector/foundation_injector.dart';

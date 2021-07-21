@@ -16,13 +16,13 @@ dependencies:
     path: ../../module_foundation/foundation_identifiers
   foundation_injector:
     path: ../../module_foundation/foundation_injector
-  core_manifest:
-    path: ../../module_core/core_manifest
-  core_utilities:
-    path: ../../module_core/core_utilities
-  core_launcher:
-    path: ../../module_core/core_launcher
-  core_router:
-    path: ../../module_core/core_router
+  shared_manifest:
+    path: ../../module_shared/shared_manifest
+  shared_utilities:
+    path: ../../module_shared/shared_utilities
+  shared_launcher:
+    path: ../../module_shared/shared_launcher
+  shared_router:
+    path: ../../module_shared/shared_router
 
 flutter:

@@ -1,4 +1,4 @@
-import 'package:core_utilities/utilities.dart';
+import 'package:shared_utilities/utilities.dart';
 import 'package:injectable/injectable.dart';
 
 @module

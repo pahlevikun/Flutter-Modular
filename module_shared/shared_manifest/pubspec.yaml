@@ -1,0 +1,36 @@
+name: shared_manifest
+description: Manifest module.
+version: 1.0.0
+author: pahlevikun
+publish_to: none
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  assets:
+    path: ../../generator/assets
+
+builders:
+  assets:
+    path: ../../generator/assets
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  assets:
+    path: ../../generator/assets
+  language:
+    path: ../../generator/language
+
+dependency_overrides:
+  path: '1.8.0'
+
+flutter:
+  uses-material-design: true
+
+assets_generator:
+  custom_package: "manifest"
