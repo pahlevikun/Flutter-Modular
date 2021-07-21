@@ -56,4 +56,4 @@ If you are a back-end guy, you may see this is similar to micro-services archite
 
 Below is illustration for rule for layering
 
-![Rule of Layering](https://raw.githubusercontent.com/pahlevikun/Flutter-Modular/main/readme/flutter_modular_3.png)
+![Rule of Layering](https://raw.githubusercontent.com/pahlevikun/Flutter-Modular/main/readme/flutter_modular_7.png)
