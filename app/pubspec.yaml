@@ -26,29 +26,29 @@ dependencies:
     sdk: flutter
 
   foundation_identifiers:
-    path: module_foundation/foundation_identifiers
+    path: ../module_foundation/foundation_identifiers
   foundation_injector:
-    path: module_foundation/foundation_injector
+    path: ../module_foundation/foundation_injector
   core_manifest:
-    path: module_core/core_manifest
+    path: ../module_core/core_manifest
   core_utilities:
-    path: module_core/core_utilities
+    path: ../module_core/core_utilities
   core_launcher:
-    path: module_core/core_launcher
+    path: ../module_core/core_launcher
   core_router:
-    path: module_core/core_router
+    path: ../module_core/core_router
   core_router_registry:
-    path: module_core/core_router_registry
+    path: ../module_core/core_router_registry
   lib_network:
-    path: module_library/lib_network
+    path: ../module_library/lib_network
   lib_event:
-    path: module_library/lib_event
+    path: ../module_library/lib_event
   lib_storage_auth_token:
-    path: module_library/lib_storage_auth_token
+    path: ../module_library/lib_storage_auth_token
   product_splash:
-    path: module_product/product_splash
+    path: ../module_product/product_splash
   product_authentication:
-    path: module_product/product_authentication
+    path: ../module_product/product_authentication
 
   alice: ^0.2.3
 

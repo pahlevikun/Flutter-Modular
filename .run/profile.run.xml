@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+    <configuration name="profile" default="false" factoryName="Flutter"
+        type="FlutterRunConfigurationType">
+        <method v="2" />
+        <option name="filePath" value="$PROJECT_DIR$/app/lib/main.dart" />
+        <option name="additionalArgs" value="--profile" />
+    </configuration>
+</component>
