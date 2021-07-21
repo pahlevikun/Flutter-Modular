@@ -11,8 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  core_utilities:
-    path: ../../module_core/core_utilities
+  shared_utilities:
+    path: ../../module_shared/shared_utilities
   foundation_injector:
     path: ../../module_foundation/foundation_injector
 

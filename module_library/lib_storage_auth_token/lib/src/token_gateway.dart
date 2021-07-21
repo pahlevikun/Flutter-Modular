@@ -1,5 +1,5 @@
-import 'package:core_manifest/manifest.dart';
-import 'package:core_storage/core_storage.dart';
+import 'package:shared_manifest/manifest.dart';
+import 'package:shared_storage/shared_storage.dart';
 import 'package:foundation_authenticator/foundation_authenticator.dart';
 
 class TokenGateway implements TokenStorage<String> {

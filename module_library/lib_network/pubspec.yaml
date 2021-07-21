@@ -22,10 +22,10 @@ dependencies:
     path: ../../module_foundation/foundation_authenticator
   foundation_injector:
     path: ../../module_foundation/foundation_injector
-  core_manifest:
-    path: ../../module_core/core_manifest
-  core_utilities:
-    path: ../../module_core/core_utilities
+  shared_manifest:
+    path: ../../module_shared/shared_manifest
+  shared_utilities:
+    path: ../../module_shared/shared_utilities
   lib_event:
     path: ../lib_event
   lib_storage_auth_token:

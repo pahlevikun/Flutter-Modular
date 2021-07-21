@@ -1,6 +1,6 @@
 import 'package:alice/alice.dart';
-import 'package:core_manifest/manifest.dart';
-import 'package:core_utilities/utilities.dart';
+import 'package:shared_manifest/manifest.dart';
+import 'package:shared_utilities/utilities.dart';
 import 'package:dio/dio.dart';
 import 'package:foundation_injector/foundation_injector.dart';
 import 'package:lib_network/src/dio_logger.dart';

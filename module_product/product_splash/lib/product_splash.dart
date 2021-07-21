@@ -1,6 +1,6 @@
 library product_splash;
 
-import 'package:core_launcher/core_launcher.dart';
+import 'package:shared_launcher/shared_launcher.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:foundation_identifiers/foundation_identifiers.dart';

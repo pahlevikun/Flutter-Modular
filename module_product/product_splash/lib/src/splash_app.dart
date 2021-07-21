@@ -1,4 +1,4 @@
-import 'package:core_router/core_router.dart';
+import 'package:shared_router/shared_router.dart';
 import 'package:flutter/material.dart';
 import 'package:foundation_injector/foundation_injector.dart';
 

@@ -1,0 +1,19 @@
+name: shared_launcher
+description: Launcher module.
+version: 1.0.0
+author: pahlevikun
+publish_to: none
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  foundation_identifiers:
+    path: ../../module_foundation/foundation_identifiers
+  foundation_injector:
+    path: ../../module_foundation/foundation_injector
+
+flutter:
