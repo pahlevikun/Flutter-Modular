@@ -1,24 +1,24 @@
 # Flutter Modular
-Flutter based project, implementing multi-module approach.
+Flutter based project, implementing multi-module approach. 
 
 ## Getting Started
 
 ### 1. Setup your Flutter Environment
 
-Since I'm working on a mac machine, what you need is to install the HomeBrew first:
+Since I'm working on a mac machine, what you need is to install HomeBrew first, then you need to install Flutter Version Manager (FVM) on your machine:
 
 ```shell script
 brew tap leoafarias/fvm
 brew install fvm
 ```
-After that you need to install Flutter Version Manager, this is a very helpful tools for managing different flutter version on multiple project:
+After you install Flutter Version Manager, you need to install Flutter SDK using FVM, FVM is a very helpful tools for managing different flutter version on multiple project:
 
 ```shell script
 fvm install
 fvm use stable --force
 ```
-
-Last part is to make the project and generate the dependencies tree, just run command below on root project:
+Why using `--force`? Because we need to set FVM on a non-flutter root directory since we are move all of our Flutter module inside another package.
+Last part is to make the project and generate dependencies tree, just run command below on root project:
 
 ```
 bash make_project.sh
@@ -40,6 +40,14 @@ To resolve this, below are some step:
 
 Basically there is 2 type of module, public module and private module, public stand for a module that can be shared and owned by another module while private module stand for a module who have owner.
 
-Below is thea outline of architecture diagram showing the level of modules:
+Below is the outline of architecture diagram showing the level of modules:
 
-![Architecture Layering](https://raw.githubusercontent.com/pahlevikun/Flutter-Modular/main/readme/flutter_modular_1.png)
+![Architecture Layering](https://raw.githubusercontent.com/pahlevikun/Flutter-Modular/main/readme/flutter_modular_2.png)
+
+If you are a back-end guy, you may see this is similar to micro-services architecture, actually yes this is the same approach but on our case we use this approach for:
+
+1. Separate of concern, each module have their own responsibility, independent between each other module, and has clear API.
+2. Allowing better re-usability.
+3. A modular system design or product can be easily upgraded (for example, for better performance of a smartphone or laptop). In non-modular products, it is harder to achieve incremental upgrades.
+4. More easier to customize according to individual customer needs or preferences.
+5. More easier to manage development on each product or feature parallel by different and multiple team.
