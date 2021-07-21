@@ -42,7 +42,7 @@ Basically there is 2 type of module, public module and private module, public st
 
 Below is the outline of architecture diagram showing the level of modules:
 
-![Architecture Layering](https://raw.githubusercontent.com/pahlevikun/Flutter-Modular/main/readme/flutter_modular_2.png)
+![Architecture Layering](https://raw.githubusercontent.com/pahlevikun/Flutter-Modular/main/readme/flutter_modular_4.png)
 
 If you are a back-end guy, you may see this is similar to micro-services architecture, actually yes this is the same approach but on our case we use this approach for:
 
