@@ -51,3 +51,9 @@ If you are a back-end guy, you may see this is similar to micro-services archite
 3. A modular system design or product can be easily upgraded (for example, for better performance of a smartphone or laptop). In non-modular products, it is harder to achieve incremental upgrades.
 4. More easier to customize according to individual customer needs or preferences.
 5. More easier to manage development on each product or feature parallel by different and multiple team.
+
+## Rule of Layering
+
+Below is illustration for rule for layering
+
+![Rule of Layering](https://raw.githubusercontent.com/pahlevikun/Flutter-Modular/main/readme/flutter_modular_3.png)
