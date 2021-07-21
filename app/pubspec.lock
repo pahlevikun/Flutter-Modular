@@ -32,7 +32,7 @@ packages:
   assets:
     dependency: transitive
     description:
-      path: "generator/assets"
+      path: "../generator/assets"
       relative: true
     source: path
     version: "1.0.0"
@@ -158,42 +158,42 @@ packages:
   core_launcher:
     dependency: "direct main"
     description:
-      path: "module_core/core_launcher"
+      path: "../module_core/core_launcher"
       relative: true
     source: path
     version: "1.0.0"
   core_manifest:
     dependency: "direct main"
     description:
-      path: "module_core/core_manifest"
+      path: "../module_core/core_manifest"
       relative: true
     source: path
     version: "1.0.0"
   core_router:
     dependency: "direct main"
     description:
-      path: "module_core/core_router"
+      path: "../module_core/core_router"
       relative: true
     source: path
     version: "1.0.0"
   core_router_registry:
     dependency: "direct main"
     description:
-      path: "module_core/core_router_registry"
+      path: "../module_core/core_router_registry"
       relative: true
     source: path
     version: "1.0.0"
   core_storage:
     dependency: transitive
     description:
-      path: "module_core/core_storage"
+      path: "../module_core/core_storage"
       relative: true
     source: path
     version: "1.0.0"
   core_utilities:
     dependency: "direct main"
     description:
-      path: "module_core/core_utilities"
+      path: "../module_core/core_utilities"
       relative: true
     source: path
     version: "1.0.0"
@@ -320,21 +320,21 @@ packages:
   foundation_authenticator:
     dependency: transitive
     description:
-      path: "module_foundation/foundation_authenticator"
+      path: "../module_foundation/foundation_authenticator"
       relative: true
     source: path
     version: "1.0.0"
   foundation_identifiers:
     dependency: "direct main"
     description:
-      path: "module_foundation/foundation_identifiers"
+      path: "../module_foundation/foundation_identifiers"
       relative: true
     source: path
     version: "1.0.0"
   foundation_injector:
     dependency: "direct main"
     description:
-      path: "module_foundation/foundation_injector"
+      path: "../module_foundation/foundation_injector"
       relative: true
     source: path
     version: "1.0.0"
@@ -418,21 +418,21 @@ packages:
   lib_event:
     dependency: "direct main"
     description:
-      path: "module_library/lib_event"
+      path: "../module_library/lib_event"
       relative: true
     source: path
     version: "1.0.0"
   lib_network:
     dependency: "direct main"
     description:
-      path: "module_library/lib_network"
+      path: "../module_library/lib_network"
       relative: true
     source: path
     version: "1.0.0"
   lib_storage_auth_token:
     dependency: "direct main"
     description:
-      path: "module_library/lib_storage_auth_token"
+      path: "../module_library/lib_storage_auth_token"
       relative: true
     source: path
     version: "1.0.0"
@@ -579,14 +579,14 @@ packages:
   product_authentication:
     dependency: "direct main"
     description:
-      path: "module_product/product_authentication"
+      path: "../module_product/product_authentication"
       relative: true
     source: path
     version: "1.0.0"
   product_splash:
     dependency: "direct main"
     description:
-      path: "module_product/product_splash"
+      path: "../module_product/product_splash"
       relative: true
     source: path
     version: "1.0.0"
