@@ -113,9 +113,7 @@ app.*.map.json
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 
 # FVM
-/.fvm/
 /.fvm/flutter_sdk/
-/.fvm/fvm_config.json
 
 # Flutter specific
 *.g.dart
