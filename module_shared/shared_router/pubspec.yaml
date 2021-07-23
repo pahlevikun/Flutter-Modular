@@ -20,8 +20,8 @@ dependencies:
     path: ../../module_foundation/foundation_identifiers
   shared_launcher:
     path: ../../module_shared/shared_launcher
-  shared_router_registry:
-    path: ../../module_shared/shared_router_registry
+  shared_product_registry:
+    path: ../../module_shared/shared_product_registry
   shared_utilities:
     path: ../../module_shared/shared_utilities
 

@@ -550,10 +550,10 @@ packages:
       relative: true
     source: path
     version: "1.0.0"
-  shared_router_registry:
+  shared_product_registry:
     dependency: "direct main"
     description:
-      path: "../shared_router_registry"
+      path: "../shared_product_registry"
       relative: true
     source: path
     version: "1.0.0"

@@ -1,5 +1,5 @@
 import 'package:shared_launcher/shared_launcher.dart';
-import 'package:shared_router_registry/shared_router_registry.dart';
+import 'package:shared_product_registry/shared_product_registry.dart';
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';

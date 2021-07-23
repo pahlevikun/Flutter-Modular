@@ -431,17 +431,17 @@ packages:
       relative: true
     source: path
     version: "1.0.0"
+  shared_product_registry:
+    dependency: transitive
+    description:
+      path: "../../module_shared/shared_product_registry"
+      relative: true
+    source: path
+    version: "1.0.0"
   shared_router:
     dependency: "direct main"
     description:
       path: "../../module_shared/shared_router"
-      relative: true
-    source: path
-    version: "1.0.0"
-  shared_router_registry:
-    dependency: transitive
-    description:
-      path: "../../module_shared/shared_router_registry"
       relative: true
     source: path
     version: "1.0.0"

@@ -37,8 +37,8 @@ dependencies:
     path: ../module_shared/shared_launcher
   shared_router:
     path: ../module_shared/shared_router
-  shared_router_registry:
-    path: ../module_shared/shared_router_registry
+  shared_product_registry:
+    path: ../module_shared/shared_product_registry
   lib_network:
     path: ../module_library/lib_network
   lib_event:

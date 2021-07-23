@@ -1,4 +1,4 @@
-# shared_router_registry
+# shared_product_registry
 
 A new Flutter project.
 
