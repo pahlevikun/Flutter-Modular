@@ -76,4 +76,5 @@ You need to follow rules below to avoid new issues comes up (such as circular de
 
 ## Navigation
 
-**WIP**
+Sometimes modular approach have big issue for navigating between pages, especially the page is located in different module. To handle that, I use an interface or in this case using abstract.
+Yes the abstract, will be act as a contract for registering the product module along with the page.
