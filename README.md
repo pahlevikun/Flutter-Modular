@@ -42,7 +42,7 @@ Basically, there is 2 types of module, public module and private module, public 
 
 Below is the outline of the architecture diagram showing the level of modules:
 
-![Architecture Layering](https://raw.githubusercontent.com/pahlevikun/Flutter-Modular/main/readme/flutter_modular_6.png)
+![Architecture Layering](https://raw.githubusercontent.com/pahlevikun/Flutter-Modular/main/readme/flutter_modular_01.png)
 
 If you are a back-end guy, you may see this is similar to micro-services architecture, actually yes this is the same approach but in our case, we use this approach for:
 
@@ -64,7 +64,7 @@ Based on the previous section, there is 4 layer on this architecture:
  
 And below is the illustration for the rule of layering:
 
-![Rule of Layering](https://raw.githubusercontent.com/pahlevikun/Flutter-Modular/main/readme/flutter_modular_7.png)
+![Rule of Layering](https://raw.githubusercontent.com/pahlevikun/Flutter-Modular/main/readme/flutter_modular_02.png)
 
 You need to follow rules below to avoid new issues comes up (such as circular dependencies):
 
@@ -74,7 +74,9 @@ You need to follow rules below to avoid new issues comes up (such as circular de
 4. **Shared**: modules on the layer below can be dependent here, can depend on the module on the same level but need to avoid circular dependency, and can't depend on the upper level.
 5. **Foundation**: an independent module, can't depend on the modules on the same level and can depend on the module on the upper layer.
 
-## Navigation
+## Product Registration and Navigation
 
 Sometimes modular approach have big issue for navigating between pages, especially the page is located in different module. To handle that, I use an interface or in this case using abstract.
 Yes the abstract, will be act as a contract for registering the product module along with the page.
+
+![Product Registration and Navigation Flow](https://raw.githubusercontent.com/pahlevikun/Flutter-Modular/main/readme/flutter_modular_03.png)
