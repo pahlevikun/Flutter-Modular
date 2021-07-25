@@ -1,4 +1,4 @@
-# shared_product_registry
+# main_product_registry
 
 A new Flutter project.
 

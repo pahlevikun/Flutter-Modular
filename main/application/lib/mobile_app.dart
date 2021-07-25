@@ -3,7 +3,7 @@ library mobile_app;
 import 'package:alice/alice.dart';
 import 'package:shared_manifest/manifest.dart';
 import 'package:shared_router/shared_router.dart';
-import 'package:shared_product_registry/shared_product_registry.dart';
+import 'package:main_product_registry/main_product_registry.dart';
 import 'package:shared_utilities/utilities.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

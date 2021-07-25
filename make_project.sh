@@ -5,10 +5,11 @@ fvm flutter clean
 
 ## declare array variables
 declare -a generator=("assets" "language")
-declare -a module_shared=("shared_extensions" "shared_launcher" "shared_manifest" "shared_router" "shared_product_registry" "shared_storage" "shared_utilities")
+declare -a module_shared=("shared_extensions" "shared_launcher" "shared_manifest" "shared_router" "shared_storage" "shared_utilities")
 declare -a module_foundation=("foundation_authenticator" "foundation_identifiers" "foundation_injector")
 declare -a module_library=("lib_event" "lib_network" "lib_storage_auth_token")
 declare -a module_product=("product_authentication" "product_splash")
+declare -a module_main=("main_product_registry" "application")
 
 for item in "${generator[@]}"; do
   DIRECTORY="$(dirname "$0")/generator/$item"
@@ -48,11 +49,13 @@ for item in "${module_product[@]}"; do
   fvm flutter pub run build_runner build --delete-conflicting-outputs
 done
 
-APP_DIRECTORY="$(dirname "$0")/app"
-cd "$APP_DIRECTORY"
-echo "$APP_DIRECTORY"
-fvm flutter pub get
-fvm flutter pub run build_runner build --delete-conflicting-outputs
+for item in "${module_main[@]}"; do
+  DIRECTORY="$(dirname "$0")/main/$item"
+  cd "$DIRECTORY"
+  echo "$DIRECTORY"
+  fvm flutter pub get
+  fvm flutter pub run build_runner build --delete-conflicting-outputs
+done
 
 echo ""
 echo "Make project finished"

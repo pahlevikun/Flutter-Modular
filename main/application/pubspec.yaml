@@ -26,29 +26,29 @@ dependencies:
     sdk: flutter
 
   foundation_identifiers:
-    path: ../module_foundation/foundation_identifiers
+    path: ../../module_foundation/foundation_identifiers
   foundation_injector:
-    path: ../module_foundation/foundation_injector
+    path: ../../module_foundation/foundation_injector
   shared_manifest:
-    path: ../module_shared/shared_manifest
+    path: ../../module_shared/shared_manifest
   shared_utilities:
-    path: ../module_shared/shared_utilities
+    path: ../../module_shared/shared_utilities
   shared_launcher:
-    path: ../module_shared/shared_launcher
+    path: ../../module_shared/shared_launcher
   shared_router:
-    path: ../module_shared/shared_router
-  shared_product_registry:
-    path: ../module_shared/shared_product_registry
+    path: ../../module_shared/shared_router
   lib_network:
-    path: ../module_library/lib_network
+    path: ../../module_library/lib_network
   lib_event:
-    path: ../module_library/lib_event
+    path: ../../module_library/lib_event
   lib_storage_auth_token:
-    path: ../module_library/lib_storage_auth_token
+    path: ../../module_library/lib_storage_auth_token
   product_splash:
-    path: ../module_product/product_splash
+    path: ../../module_product/product_splash
   product_authentication:
-    path: ../module_product/product_authentication
+    path: ../../module_product/product_authentication
+  main_product_registry:
+    path: ../../main/main_product_registry
 
   alice: ^0.2.3
 
