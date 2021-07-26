@@ -80,3 +80,45 @@ Sometimes modular approach have big issue for navigating between pages, especial
 Yes the abstract, will be act as a contract for registering the product module along with the page.
 
 ![Product Registration and Navigation Flow](https://raw.githubusercontent.com/pahlevikun/Flutter-Modular/main/readme/flutter_modular_04.png)
+
+Diagram above describe about the module structure of product registration and navigation. Yes, each time you want to create a product, you need to register it using a singleton class, on that singleton you need to register your page too.
+
+### Register a Product Module
+
+If you are creating a new product module, make sure you add module below on your `pubspec.yaml`:
+
+- `foundation_identifiers`: used for registering your product and page identifiers.
+- `shared_launcher`: you need abstraction from this module, it will work like a launcher.
+- `shared_router`: this module will work for navigating to the page you want.
+
+Make sure you never implement your product module on these 3 modules as it not allowed to do that based on our modularization rule. So below is some steps to create a product module and register it:
+
+1. You need to define your product identifiers first on `foundation_identifiers`, for example: `SPLASH` as enum value on `ProductIdentifier`.
+2. After that, you need to create a singleton acting as launcher for your product module. for example like code below:
+
+```dart
+class SplashProduct implements Product {
+  @override
+  ProductIdentifier productId = ProductIdentifier.SPLASH;
+
+  @override
+  Map<PageIdentifier, RegisteredPage> registeredPages = {};
+
+  @override
+  RegisteredPage defaultPage = RegisteredPage(
+    PathIdentifier.SPLASH,
+    (args) => SplashApp(),
+  );
+
+  @override
+  Future<void> onConfigureDependencies() async {}
+
+  @override
+  void onBuild(BuildContext context) {}
+}
+```
+
+3. As you can see above that you need a default page for this class, for this case I already create a `SplashApp()` so I just put it that.
+
+
+### Register a Page for Navigation
