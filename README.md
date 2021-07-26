@@ -93,8 +93,8 @@ If you are creating a new product module, make sure you add module below on your
 
 Make sure you never implement your product module on these 3 modules as it not allowed to do that based on our modularization rule. So below is some steps to create a product module and register it:
 
-1. You need to define your product identifiers first on `foundation_identifiers`, for example: `SPLASH` as enum value on `ProductIdentifier`.
-2. After that, you need to create a singleton acting as launcher for your product module. for example like code below:
+- You need to define your product identifiers first on `foundation_identifiers`, for example: `SPLASH` as enum value on `ProductIdentifier`.
+- After that, you need to create a singleton acting as launcher for your product module. for example like code below:
 
 ```dart
 class SplashProduct implements Product {
@@ -118,7 +118,61 @@ class SplashProduct implements Product {
 }
 ```
 
-3. As you can see above that you need a default page for this class, for this case I already create a `SplashApp()` so I just put it that.
+- As you can see above that you need a default page for this class, for this case I already create a `SplashApp()` so I just put it that.
 
 
 ### Register a Page for Navigation
+
+You need to register your pages on you product singleton to make it exposed to other module, by doing this other modules can open your page without adding your product as another products' dependency as it disallowed here. Below is the steps:
+
+- Register your page identifier and path identifiers inside `foundation_identifiers`, as example I will register my `SplashApp()` below:
+
+```dart
+abstract class PathIdentifier {
+  static const String SPLASH = "/splash";
+}
+```
+
+```dart
+enum PageIdentifier {
+  SPLASH,
+}
+```
+
+- After that, just register your page inside your product singleton like code below:
+
+```dart
+class SplashProduct implements Product {
+  @override
+  ProductIdentifier productId = ProductIdentifier.SPLASH;
+
+  @override
+  Map<PageIdentifier, RegisteredPage> registeredPages = {
+    PageIdentifier.SPLASH: RegisteredPage(
+      PathIdentifier.SPLASH,
+      (args) => SplashApp(),
+    )
+  };
+
+  @override
+  RegisteredPage defaultPage = RegisteredPage(
+    PathIdentifier.SPLASH,
+    (args) => SplashApp(),
+  );
+
+  @override
+  Future<void> onConfigureDependencies() async {}
+
+  @override
+  void onBuild(BuildContext context) {}
+}
+``` 
+
+- Last things, you can just navigate it using `MaterialRoute` or if you are using `fluro` like me, you can just call this method:
+
+```dart
+navigateTo(
+  context,
+  PathIdentifier.SPLASH,
+);
+```
